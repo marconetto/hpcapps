@@ -33,6 +33,9 @@ Here is how you obtain the latest WRF:
 git clone --recurse-submodules https://github.com/wrf-model/WRF
 ```
 
+
+However, before downloading WRF, various dependencies must be downloaded.
+
 #### Compilation
 
 The link below contains the full instructions on how to compile WRF and
@@ -49,10 +52,20 @@ If you want the automation of these steps you can download the following script:
 - Script (GNU compiler): [install_ubuntu_azure_hpc_image.sh](install_ubuntu_azure_hpc_image.sh)
 
 
+Before compilation, take the content of the following script and put it into
+your bashrc.
+
+- Set vars scripts:
+  [setvars_ubuntu_azure_hpc_image.sh](setvars_ubuntu_azure_hpc_image.sh)
+
+
+
 This script uses gcc and gfortran, and will NOT install openmpi. The process may
 take several minutes. This script basically has parts of the official WRF
 compilation guide and parts of another installation guide:
 <https://forum.mmm.ucar.edu/threads/full-wrf-and-wps-installation-example-gnu.12385/>
+
+WPS is not in this install script as it is not required to run Conus benchmarks.
 
 
 

@@ -1,0 +1,16 @@
+export WRFDIR=/home/marco.linux/WRFmodel/LIBRARIES
+export CC=gcc
+export CXX=g++
+export FC=gfortran
+export FCFLAGS=-m64
+export F77=gfortran
+export FFLAGS=-m64
+export JASPERLIB=$WRFDIR/grib2/lib
+export JASPERINC=$WRFDIR/grib2/include
+export LDFLAGS=-L$WRFDIR/grib2/lib
+export CPPFLAGS=-I$WRFDIR/grib2/include
+export PATH=$WRFDIR/netcdf/bin:$PATH
+export NETCDF=$WRFDIR/netcdf
+export CPPFLAGS="$CPPFLAGS -I$WRFDIR/netcdf/include"
+export LDFLAGS="$LDFLAGS -L$WRFDIR/netcdf/lib"
+export PATH=$WRFDIR/mpich/bin:$PATH
