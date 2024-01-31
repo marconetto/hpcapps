@@ -26,9 +26,6 @@ git link for download:
 Note: code prior to WRF v4.0 can be found here:
 <https://www2.mmm.ucar.edu/wrf/users/download/get_sources.html>
 
-Here is how you obtain the latest WRF:
-
-
 ```
 git clone --recurse-submodules https://github.com/wrf-model/WRF
 ```
@@ -37,6 +34,9 @@ git clone --recurse-submodules https://github.com/wrf-model/WRF
 However, before downloading WRF, various dependencies must be downloaded.
 
 #### Compilation
+
+
+##### From source code (option 1)
 
 The link below contains the full instructions on how to compile WRF and
 WPS---some variation may happen due to environment setup:
@@ -58,8 +58,6 @@ your bashrc.
 - Set vars scripts:
   [setvars_ubuntu_azure_hpc_image.sh](setvars_ubuntu_azure_hpc_image.sh)
 
-
-
 This script uses gcc and gfortran, and will NOT install openmpi. The process may
 take several minutes. This script basically has parts of the official WRF
 compilation guide and parts of another installation guide:
@@ -68,6 +66,12 @@ compilation guide and parts of another installation guide:
 WPS is not in this install script as it is not required to run Conus benchmarks.
 
 
+##### From spack (option 2)
+
+It is also possible to install WRF from spack tool. Here is the script to do so:
+
+- Installation script via spack:
+[install_ubuntu_azure_hpc_image_spack.sh](install_ubuntu_azure_hpc_image_spack.sh)
 
 
 
@@ -151,6 +155,10 @@ d01 2019-11-27_00:00:00 wrf: SUCCESS COMPLETE WRF
 <https://forum.mmm.ucar.edu/threads/full-wrf-and-wps-installation-example-gnu.12385/>
 - Full WRF and WPS Installation Example (Intel):
 <https://forum.mmm.ucar.edu/threads/full-wrf-and-wps-installation-example-intel.15229/>
+- WRF v4 on azure HB-series, HC-series, and HBv2 (oct-2022):
+  <https://techcommunity.microsoft.com/t5/azure-high-performance-computing/run-wrf-v4-on-azure-hpc-virtual-machines/ba-p/1131097>
+- Spack getting started:
+  <https://spack.readthedocs.io/en/latest/getting_started.html>
 
 ---
 <br>

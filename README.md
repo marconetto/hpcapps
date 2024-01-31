@@ -18,5 +18,5 @@ So for each application we will have info on:
 
 
 1. [Chapter1:](chapter1/) Matrix Multiplication - Hello World ;-)
-1. [Chapter2:](chapter2/) Weather Research & Forecasting (WRF)
+1. [Chapter2:](chapter2/) Weather Research & Forecasting Model (WRF)
 
