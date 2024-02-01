@@ -73,6 +73,12 @@ It is also possible to install WRF from spack tool. Here is the script to do so:
 - Installation script via spack:
 [install_ubuntu_azure_hpc_image_spack.sh](install_ubuntu_azure_hpc_image_spack.sh)
 
+##### From EESSI (option 3)
+
+EESSI, can also be used to make WRF available in your system. Here is the
+script:
+- Installation script via EESSI: [install_ubuntu_azure_hpc_image_eessi.sh](install_ubuntu_azure_hpc_image_eessi.sh)
+
 
 
 #### Execution
@@ -157,8 +163,8 @@ d01 2019-11-27_00:00:00 wrf: SUCCESS COMPLETE WRF
 <https://forum.mmm.ucar.edu/threads/full-wrf-and-wps-installation-example-intel.15229/>
 - WRF v4 on azure HB-series, HC-series, and HBv2 (oct-2022):
   <https://techcommunity.microsoft.com/t5/azure-high-performance-computing/run-wrf-v4-on-azure-hpc-virtual-machines/ba-p/1131097>
-- Spack getting started:
-  <https://spack.readthedocs.io/en/latest/getting_started.html>
+- Spack getting started: <https://spack.readthedocs.io/en/latest/getting_started.html>
+- EESSI: <https://www.eessi.io/docs/getting_access/native_installation/>
 
 ---
 <br>
