@@ -95,8 +95,14 @@ When selecting WRF 4.4 for instance, one will be moved to this page:
 
 Which contains the CONUS 12-km and CONUS 2.5-km tar files:
 
-- <https://www2.mmm.ucar.edu/wrf/users/benchmark/v44/v4.4_bench_conus2.5km.tar.gz>
-- <https://www2.mmm.ucar.edu/wrf/users/benchmark/v44/v4.4_bench_conus12km.tar.gz>
+- Conus 2.5km: <https://www2.mmm.ucar.edu/wrf/users/benchmark/v44/v4.4_bench_conus2.5km.tar.gz>
+- Conus 12km: <https://www2.mmm.ucar.edu/wrf/users/benchmark/v44/v4.4_bench_conus12km.tar.gz>
+
+Conus benchmark data for WRF 3.9 can be downloaded with these URLS:
+
+- Conus 2.5km: <https://www2.mmm.ucar.edu/wrf/users/benchmark/v3911/bench_2.5km.tar.bz2>
+- Conus 12km: <https://www2.mmm.ucar.edu/wrf/users/benchmark/v3911/bench_12km.tar.bz2>
+
 
 
 Let's say we want to test conus 12km.
