@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+#module load mpi/openmpi-4.1.5
+
 # instructions from: https://www.eessi.io/docs/getting_access/native_installation
 sudo apt-get install lsb-release
 wget https://ecsft.cern.ch/dist/cvmfs/cvmfs-release/cvmfs-release-latest_all.deb
@@ -16,6 +18,5 @@ sudo bash -c "echo 'CVMFS_QUOTA_LIMIT=10000' >> /etc/cvmfs/default.local"
 
 sudo cvmfs_config setup
 
-source /cvmfs/pilot.eessi-hpc.org/latest/init/bash
-module load WRF/3.9.1.1-foss-2020a-dmpar
-module load mpi/openmpi-4.1.5
+#source /cvmfs/software.eessi.io/versions/2023.06/init/bash
+#module load WRF/3.9.1.1-foss-2020a-dmpar
