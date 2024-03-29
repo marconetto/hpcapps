@@ -32,15 +32,20 @@ If you want the automation of these steps you can download the following script:
 - Script (GNU compiler) WITH CLUSTER: [install_ubuntu_azure_hpc_image_cluster.sh](install_ubuntu_azure_hpc_image_cluster.sh)
 
 
-
-
-https://github.com/Azure/azurehpc/blob/master/apps/gromacs/install_gromacs.sh
-https://castle.com.bd/gromacs-installation-on-ubuntu-linux/
-
-
 ##### From spack (option 2)
 
+It is also possible to install GROMACS from spack tool. Here is the script to do so:
+
+- Installation script via spack:
+[install_ubuntu_azure_hpc_image_spack.sh](install_ubuntu_azure_hpc_image_spack.sh)
+
+
 ##### From EESSI (option 3)
+
+
+EESSI, can also be used to make GROMACS available in your system. Here is the
+script:
+- Installation script via EESSI: [install_ubuntu_azure_hpc_image_eessi.sh](install_ubuntu_azure_hpc_image_eessi.sh)
 
 
 ### Execution
@@ -52,7 +57,7 @@ Examples of execution commands, which run a molecular dynamics simulation using 
 export OMP_NUM_THREADS=2
 wget https://repository.prace-ri.eu/ueabs/GROMACS/2.2/GROMACS_TestCaseA.tar.xz
 tar -xf GROMACS_TestCaseA.tar.xz
-cd GROMACS_TestCase || exit
+cd GROMACS_TestCaseA || exit
 mkdir outputs
 ```
 
@@ -82,7 +87,8 @@ time gmx mdrun -s ion_channel.tpr \
 With MPI:
 
 ```
-mpirun -np 8 gmx_mpi mdrun \
+module load mpi/openmpi
+time mpirun -np 8 gmx_mpi mdrun \
     -s ion_channel.tpr \
     -deffnm outputs/md.TESTCASE \
     -cpt 1000 \
