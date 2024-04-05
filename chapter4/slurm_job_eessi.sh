@@ -16,10 +16,9 @@ source "$FOAM_BASH"
 #module load OpenMPI
 
 EXECDIR=motorBike.$$
-sudo cp -r "$FOAM_TUTORIALS"/incompressibleFluid/motorBike/motorBike $EXECDIR
+cp -r "$FOAM_TUTORIALS"/incompressibleFluid/motorBike/motorBike $EXECDIR
 
-sudo chown -R $(id -u):$(id -g) $EXECDIR
-sudo chmod -R 777 $EXECDIR
+chmod -R u+w $EXECDIR
 cd $EXECDIR || exit
 
 scontrol show hostname "$SLURM_JOB_NODELIST" | sort -u >"$HOME/$EXECDIR/nodefile-$SLURM_JOB_ID"
